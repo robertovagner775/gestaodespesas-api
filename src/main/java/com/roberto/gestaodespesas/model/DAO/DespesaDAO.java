@@ -24,7 +24,7 @@ public class DespesaDAO {
     public Boolean adicionarDespesa(Despesa despesa)  {
   
                 try{
-                        String sql = "INSERT INTO DESPESA ( DESCRICAO, VALOR, CATEGORIA, DATA) VALUES ( ?, ?, ?, ?)";
+                        String sql = "INSERT INTO despesa ( descricao, valor, categoria, data) VALUES ( ?, ?, ?, ?)";
                       
 
                         PreparedStatement pt = null;
@@ -56,7 +56,7 @@ public class DespesaDAO {
     }
 
     public double buscaDespesaValor(int id)  {
-        String sqlBuscarDespesa = "SELECT valor FROM Despesa WHERE id = ?";
+        String sqlBuscarDespesa = "SELECT valor FROM despesa WHERE id = ?";
         Connection conn = DbConnection.getConexao();
         try(PreparedStatement stmtDespesaBanco = conn.prepareStatement(sqlBuscarDespesa); ){
             stmtDespesaBanco.setInt(1, id);
@@ -110,7 +110,7 @@ public class DespesaDAO {
        
  
           
-            String sqlDespesa = "UPDATE DESPESA SET DESCRICAO = ? ,  VALOR = ? , CATEGORIA = ?, DATA = ? WHERE ID = ?";
+            String sqlDespesa = "UPDATE despesa SET descricao = ? ,  valor = ? , categoria = ?, data = ? WHERE id = ?";
             
         
     

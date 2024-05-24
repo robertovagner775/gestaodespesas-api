@@ -16,7 +16,7 @@ public class SaldoDAO {
     public Boolean atualizarSaldo(Double valor) { 
         double saldoAtual = verificarSaldo();
         try{
-            String sql = "UPDATE SALDO SET VALOR = ?  WHERE ID = 1";
+            String sql = "UPDATE saldo SET valor = ?  WHERE ID = 1";
         
             PreparedStatement pt = null;
     
@@ -37,7 +37,7 @@ public class SaldoDAO {
     public Boolean decrementarSaldo(Double valor) { 
         double saldoAtual = verificarSaldo();
         try{
-            String sql = "UPDATE SALDO SET VALOR = ?  WHERE ID = 1";
+            String sql = "UPDATE saldo SET valor = ?  WHERE ID = 1";
         
             PreparedStatement pt = null;
     
@@ -77,7 +77,7 @@ public class SaldoDAO {
             int count = verificaSaldoExistente();
             if(count == 0) {
                     System.out.println("numero de linhas: "+ count);
-                    String sql = "INSERT INTO Saldo (id, valor) VALUES (1, ?) ";     
+                    String sql = "INSERT INTO saldo (id, valor) VALUES (1, ?) ";     
 
                     PreparedStatement pt = null;
                 
@@ -105,7 +105,7 @@ public class SaldoDAO {
     public int verificaSaldoExistente() {
         try{
             Connection connection = DbConnection.getConexao();
-            String checkSql = "SELECT COUNT(*) FROM Saldo WHERE id = ?";
+            String checkSql = "SELECT COUNT(*) FROM saldo WHERE id = ?";
             PreparedStatement checkStmt = connection.prepareStatement(checkSql);
             checkStmt.setInt(1, 1);
             ResultSet rs = checkStmt.executeQuery();
