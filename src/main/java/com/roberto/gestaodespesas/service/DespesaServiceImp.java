@@ -43,9 +43,9 @@ public class DespesaServiceImp implements DespesaService {
             if(despesaDAO.adicionarDespesa(despesa) && test) {
               return ResponseEntity.status(201).body(new ResponseDto("nova despesa adicionada", 201));
             }
-            return ResponseEntity.status(0).body(new ErrorResponseDto("saldo insuficiente", "erro ao adicionar despesa", 200));
+            return ResponseEntity.status(200).body(new ErrorResponseDto("saldo insuficiente", "erro ao adicionar despesa", 200));
         } 
-        return ResponseEntity.status(0).body(new ErrorResponseDto("saldo insuficiente", "erro ao adicionar despesa", 200));
+        return ResponseEntity.status(200).body(new ErrorResponseDto("saldo insuficiente", "erro ao adicionar despesa", 200));
           
     }
 
