@@ -145,7 +145,7 @@ public class DespesaDAO {
     public Boolean deletar(Despesa despesa) {
     
             try{
-                String sql = "DELETE  FROM DESPESA WHERE id = ?";
+                String sql = "DELETE  FROM despesa WHERE id = ?";
                 PreparedStatement pt = null;
               
                 Connection conn = DbConnection.getConexao();
