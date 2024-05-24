@@ -14,9 +14,9 @@ public class DbConnection {
   
     public static final String user = "root";
 
-    public static final String url = "jdbc:mysql://localhost/gestaodespesas";
+    public static final String url = "mysql://root:USdiSfybdjsGcLUQrzbDyYOSjzYBMEqP@roundhouse.proxy.rlwy.net:30852/railway";
 
-    public static final String password = "";
+    public static final String password = "USdiSfybdjsGcLUQrzbDyYOSjzYBMEqP";
 
     public static Connection conn;
 
