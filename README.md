@@ -1,20 +1,14 @@
-# API de Gestão de Despesas
+## API de Gestão de Despesas
 
-A API tem como objetivo principal, gerenciar e organizar as despesas 
-e saldos das pessoas realizando as principais operações do CRUD em Java como INSERT, UPDATE, DELETE e SELECT.
+A API tem como objetivo principal, gerenciar e organizar as despesas em categorias como alimentação, saude  dentre outras, além de gerenciar o
+saldos das pessoas, realizando as principais operações do CRUD em Java como INSERT, UPDATE, DELETE e SELECT. Foi utlizado padrões de projeto como DAO para separar as operações do banco de dados dos serviços deixando somente para á lógica de negócio.
 
-Usando as bibliotecas que já vem junto ao java como o JDBC e o driver do MySQL. Foi utilizado o framework spring para conectar o front-end e 
-o back-end.
-
-Foi utilizado o padrão DAO para separar as operações que envolvem o banco de dados dos services.
-
-## Ferramentas 
+### Ferramentas 
 - Spring Rest
 - Java
 - MySQL
-- JDBC
 
-## Principais Operações 
+### Principais Operações 
 - Adicionar Despesa
 - Remover Despesa
 - Listar Despesa
