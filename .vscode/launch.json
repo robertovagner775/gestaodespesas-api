@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-GestaodespesasApplication<gestaodespesas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.roberto.gestaodespesas.GestaodespesasApplication",
+            "projectName": "gestaodespesas",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
